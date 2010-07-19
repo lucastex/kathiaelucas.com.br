@@ -11,7 +11,7 @@ hr {display: block; height: 1px; color: #CCC; background: #CCC; border: 0; margi
 select {font-size: 1em;}
 option {font-size: 1.1em;}
 
-#page {background:url(../img/bg.jpg) no-repeat center top; height:760px; overflow:hidden;}
+#page {background:url(../img/bg.jpg) no-repeat center top; height:760px; overflow:hidden;background-color:#AFCFE6;}
 #content {display:block; width:863px; margin:0 auto;}
 h1 {display:block; width:642px; height:87px; background:url(../img/logo.png) no-repeat; margin:30px auto 0 auto;}
 h1 span {display:none;}
