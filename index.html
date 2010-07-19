@@ -1,53 +1,57 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" > 
 <html xmlns="http://www.w3.org/1999/xhtml"> 
-	
-	<head>
-	
+	<head>	
 		<title>Lucas e Kathia</title>	
 		<meta http-equiv="Content-Type" content="text/xhtml+xml; charset=UTF-8" /> 
-		<link rel="stylesheet" href="css/stylesheet.css" />
-		
-	</head>
-	
-	<body>
-	
-		<div id="page">
-			
-			<div id="content">
-			
-				<h1><span>Lucas e Kathia</span></h1>
-				
-				<div id="mainContent">
-				
-					<div id="photos"><img src="img/fotos.png" alt="Fotos" /></div>
-					
-					<div id="container">
-					
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/stylesheet.css" />		
+	</head>	
+	<body>	
+		<div id="page">			
+			<div id="content">			
+				<h1><span>Lucas e Kathia</span></h1>				
+				<div id="mainContent">				
+					<div id="photos"><img src="img/fotos.png" alt="Fotos" /></div>					
+					<div id="container">					
 						<ul id="menu">
-							<li><a href="#">Kathia e Lucas</a></li>
-							<li><a href="#">--</a></li>
-							<li><a href="#">Mapas e Hospedagem</a></li>
-							<li><a href="#">Lista de Presentes</a></li>
-						</ul>
-						
+							<li><a href="#" class="inicio">Kathia e Lucas</a></li>
+							<li><a href="#" class="momentos">Momentos</a></li>
+							<li><a href="#" class="mapa">Mapas e Hospedagem</a></li>
+							<li><a href="#" class="lista">Lista de Presentes</a></li>
+						</ul>						
 						<div id="twitter" style="display:none">
 							<span> aee aeae e a e ea  e eaae</span>
-						</div>
-						
-						<div id="middle">
-							
-							<iframe width="550" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.br/maps?f=d&amp;source=s_d&amp;saddr=Rua+Goi%C3%A1s,+877+-+Londrina+-+PR,+86010-465+(Bristol+Hot%C3%A9is+%26+Resorts)&amp;daddr=Rua+Mato+Grosso,+1167+-+Londrina+-+PR,+86010-180+(Par%C3%83%C2%B3quia+Sagrados+Cora%C3%83%C2%A7%C3%83%C2%B5es-Consult%C3%83%C2%B3rio+Odontol%C3%83%C2%B3gico)+to:Av.+Dr.+Francisco+Xavier+Toda,+170+-+Londrina+-+Paran%C3%A1,+86072-410&amp;hl=pt-BR&amp;geocode=FQg8nP4dX1vz_CEsbqhL4SfAoyn1Kn9ZXkPrlDFDviQWWbc7hA%3BFY8qnP4dYWrz_CECT7ettqoJ9in7EAXRZ0PrlDFF_Iyzfzlqpg%3BFTOunP4dppjy_Clzfwml4lrrlDF4F0m6dDQtbg&amp;mra=pe&amp;mrcr=1&amp;sll=-23.303071,-51.183228&amp;sspn=0.047455,0.090895&amp;ie=UTF8&amp;ll=-23.303005,-51.183243&amp;spn=0.075676,0.109863&amp;z=13&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com.br/maps?f=d&amp;source=embed&amp;saddr=Rua+Goi%C3%A1s,+877+-+Londrina+-+PR,+86010-465+(Bristol+Hot%C3%A9is+%26+Resorts)&amp;daddr=Rua+Mato+Grosso,+1167+-+Londrina+-+PR,+86010-180+(Par%C3%83%C2%B3quia+Sagrados+Cora%C3%83%C2%A7%C3%83%C2%B5es-Consult%C3%83%C2%B3rio+Odontol%C3%83%C2%B3gico)+to:Av.+Dr.+Francisco+Xavier+Toda,+170+-+Londrina+-+Paran%C3%A1,+86072-410&amp;hl=pt-BR&amp;geocode=FQg8nP4dX1vz_CEsbqhL4SfAoyn1Kn9ZXkPrlDFDviQWWbc7hA%3BFY8qnP4dYWrz_CECT7ettqoJ9in7EAXRZ0PrlDFF_Iyzfzlqpg%3BFTOunP4dppjy_Clzfwml4lrrlDF4F0m6dDQtbg&amp;mra=pe&amp;mrcr=1&amp;sll=-23.303071,-51.183228&amp;sspn=0.047455,0.090895&amp;ie=UTF8&amp;ll=-23.303005,-51.183243&amp;spn=0.075676,0.109863&amp;z=13" style="color:#0000FF;text-align:left">Exibir mapa ampliado</a></small>
+						</div>						
+						<div id="middle" class="scroll">  
 							
 						</div>
-						
 					</div>
-
 				</div>
-			
 			</div>
-			
 		</div>
-	
+		<script>
+		
+			$("#middle").load("inicio.html");
+			
+			$(document).ready(function() {
+				
+				$(".inicio").click(function() {
+					$("#middle").load("inicio.html");
+				});
+				
+				$(".momentos").click(function() {
+					$("#middle").load("momentos.html");
+				});
+				
+				$(".mapa").click(function() {
+					$("#middle").load("mapa.html");
+				});
+				
+				$(".lista").click(function() {
+					$("#middle").load("lista.html");
+				});
+			});
+		
+		</script>
 	</body>
-	
 </html>

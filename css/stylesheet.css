@@ -26,3 +26,12 @@ h1 span {display:none;}
 #container #twitter {background:url(../img/twitter.png) no-repeat; padding-top:40px; margin:310px 0 0 25px; height:250px; width:205px;}
 #container #twitter span {display:block; color:#fff; margin-bottom:15px; font-size:11px;}
 #container #twitter span a {color:#c2f6ce;}
+div.scroll { height: 450px; overflow: auto; }
+
+h2 {
+	color: #FFFFCC;
+}
+
+p {
+	color: #FFFFCC;
+}                                                  
