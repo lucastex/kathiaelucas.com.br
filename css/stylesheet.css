@@ -1,5 +1,6 @@
 /* Geral - Componentes Basicos  */
 * {margin:0; padding:0;}
+html { background-color: #AFCFE6;}
 body {font-size:62.5%; /* line-height:1.25; */ font-family: verdana, freesans, garuda, helvetica, sans-serif; color: #666; background-color: #FFF;}
 img, ul, a, fieldset {border: 0; list-style: none}
 a{cursor: pointer; text-decoration:none;}
@@ -30,8 +31,57 @@ div.scroll { height: 450px; overflow: auto; }
 
 h2 {
 	color: #FFFFCC;
+	margin-bottom: 15px;
+	font-size: 16px;
 }
 
 p {
-	color: #FFFFCC;
+	font-size: 12px;
+	text-align: justify;
+	color: #FFFFFF;
 }                                                  
+
+#cotas-container {
+	margin-top: 15px;
+}
+
+#cotas-paris {
+	float: left;
+	margin-right: 7px;
+}
+
+#cotas-ny {
+	float: left;
+}
+
+.cotas {
+	width: 265px;
+	border: 2px solid #FFFFCC;
+}
+
+.cotas-titulo {
+	padding: 7px;
+	text-align: center;
+	font-size: 13px;
+	color: #1F2B03;
+	background-color: #B2B68F;
+}
+
+.cotas ul {
+	margin-bottom: 5px;
+	margin-left: 15px;
+}
+
+.cotas ul li {
+	padding-top: 5px;
+	font-size: 11px;
+}
+
+.cotas ul li a {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.cotas ul li a span {
+	font-weight: normal;
+}
