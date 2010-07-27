@@ -7,8 +7,7 @@
 	
 	<div class="cotas" id="cotas-paris">
 		<div class="cotas-titulo">Em Paris</div>
-		<ul>
-			<li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HBYCMHESTQRKE">Subida à Torre Eiffel - <span>R$ 160,00</span></a></li>
+		<ul id="ul-cotas-fr">
 		</ul>
 	</div>
 	
@@ -17,3 +16,40 @@
 	</div>
 	
 </div>
+
+<script>
+
+	var cotasFr = new Array(new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HBYCMHESTQRKE","Subida à Torre Eiffel","160"),
+							new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TQLSW56GTNWS4","Passeio de Bateaux Mouches no Rio Sena","80"),
+							new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SK7PQ28X5H5TL","Ida ao museu do Louvre","135"),
+							new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=A8VLDJ48PP7A2","Tarde de compras na Champs-Élysées","450"),
+							new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MYQTR2U9TKXPG","Visita ao palácio de Versailles","180"),
+							new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RH2YC8KRT3BBA","Tour pela igreja de Notre-dame","100"),
+							new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZR5M79WYLJCFL","Uma diária do hotel","250"),
+							new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=G2ZX85932HLYQ","Duas diárias do hotel","500"),
+							new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=D9CDJ8SH4SLX2","Três diárias do hotel","750"),
+							new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HNSDCBDYQEJBN","Lanche da tarde no Café Marly","80"),
+							new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=B3ZS3QQCGR43A","Subida no Arco do Triunfo","75"),
+							new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=S4CQPEXMMZ5QY","Espetáculo na Opera Garnier","250"),
+							new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CFXCABUSDQCRY","Entradas para o tour na Igreja de Sacré-Coeur","120"),
+							new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9YQZ86VHLS72Y","Acesso aos Jardins de Luxemburgo","80"),
+							new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GHFWG4AT63PAA","Entrada no Museu de Rodin","70"),
+							new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TT5BUNDAL79US","Passe ao Museu do Picasso","90"),
+							new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W5TCFMJ5TEUK6","Souvenirs da Galeria Lafayette","150"),
+							new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9FS9Y3AB6QBF4","Visita ao moinho do Moulin Rouge","110"),
+							new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=X7J8NK3QND95Y","Tarde de passeio no Quartier Latin","100"));
+	
+	var currArray = cotasFr;
+	for (i = 0; i < currArray.length; i++) {
+		var cotaArray = currArray[i];
+		var url = cotaArray[0];
+		var titulo = cotaArray[1];
+		var valor = cotaArray[2];
+
+		var htmlText = "<li><a href=\""+url+"\">"+titulo+" - <span>R$ "+valor+",00</span></a></li>";
+		$("#ul-cotas-fr").append(htmlText);
+	}
+
+</script>
+
+<!-- <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HBYCMHESTQRKE">Subida à Torre Eiffel - <span>R$ 160,00</span></a></li> -->
