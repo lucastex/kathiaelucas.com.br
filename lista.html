@@ -33,13 +33,18 @@
 	
 	.cota-left-icon {
 	}
+	
+	.cota-price {
+		font-weight: bold;
+	}
 		
 </style>
 
 <div id="cotas-container">
 	
-	<table width="100%">     
+	<table width="100%" id="tabelaCotas">     
 		
+		<!--
 		<tr>
 			<td valign="top">
 	
@@ -67,7 +72,7 @@
 				</div>
 			
 			</td>
-		</tr>
+		</tr> -->
 
 	</table>
 
@@ -134,21 +139,31 @@
 								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KG9MUMFCFQCWN","Passeio de Charrete no Central Park","95"),
 								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H22YA5ZM8QNRG","Manhã na Macy's","190"));
 	
-		//popula(cotasFr);
-		//popula(cotasUs);
+		popula(cotasFr, cotasUs);
 
 	}
 
-	function popula(currArray) {
+	function popula(cotasFr, cotasUs) {
 		
-		for (i = 0; i < currArray.length; i++) {
-			var cotaArray = currArray[i];
-			var url = cotaArray[0];
-			var titulo = cotaArray[1];
-			var valor = cotaArray[2];
+		for (i = 0; i < cotasFr.length; i++) {
+			var frArray = cotasFr[i];
+			var frUrl = frArray[0];
+			var frTitulo = frArray[1];
+			var frValor = frArray[2];
 
-			var htmlText = "<li><a href=\""+url+"\">"+titulo+" - <span>R$ "+valor+",00</span></a></li>";
-			$("#ul-cotas-fr").append(htmlText);
+			var usArray = cotasFr[i];
+			var usUrl = usArray[0];
+			var usTitulo = usArray[1];
+			var usValor = usArray[2];    
+
+			var htmlText  = "";
+			    htmlText += "<tr><td valign=\"top\">";
+			    htmlText += "<div class=\"cota-general\" align=\"left\"><div class=\"cota-left-icon\"><img src=\"img/paris.jpg\"></img></div><div class=\"cota-left-content\"><p class=\"cota-title\">"+frTitulo+"</p><span class=\"cota-description\">"+frTitulo+"</span> - <span class=\"cota-price\">R$ "+usValor+",00</span></div></div>";
+				htmlText += "</td><td>";
+    			htmlText += "<div class=\"cota-general\" align=\"left\"><div class=\"cota-left-icon\"><img src=\"img/ny.gif\"></img></div><div class=\"cota-left-content\"><p class=\"cota-title\">"+usTitulo+"</p><span class=\"cota-description\">"+usTitulo+"</span> - <span class=\"cota-price\">R$ "+usValor+",00</span></div></div>";
+				htmlText += "</td></tr>";
+			
+			$("#tabelaCotas").append(htmlText);
 		}
 		
 	}
