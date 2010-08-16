@@ -1,1 +1,50 @@
-<h2>Alguns momentos divertidos</h2>
+<h2>Fotos e Momentos</h2>
+
+<div id="galleria">
+	
+	<img src='fts/foto-001.jpg'></img>
+	<img src='fts/foto-002.jpg'></img>
+	<img src='fts/foto-003.jpg'></img>
+	<img src='fts/foto-004.jpg'></img>
+	<img src='fts/foto-005.jpg'></img>
+	<img src='fts/foto-006.jpg'></img>
+	<img src='fts/foto-007.jpg'></img>
+	<img src='fts/foto-008.jpg'></img>
+	<img src='fts/foto-009.jpg'></img>
+	<img src='fts/foto-010.jpg'></img>
+	<img src='fts/foto-011.jpg'></img>
+	<img src='fts/foto-012.jpg'></img>
+	<img src='fts/foto-013.jpg'></img>
+	<img src='fts/foto-014.jpg'></img>
+	<img src='fts/foto-015.jpg'></img>
+	<img src='fts/foto-016.jpg'></img>
+	<img src='fts/foto-017.jpg'></img>
+	<img src='fts/foto-018.jpg'></img>
+	<img src='fts/foto-019.jpg'></img>
+	<img src='fts/foto-020.jpg'></img>
+	<img src='fts/foto-021.jpg'></img>
+	<img src='fts/foto-022.jpg'></img>
+	<img src='fts/foto-023.jpg'></img>
+	<img src='fts/foto-024.jpg'></img>
+	<img src='fts/foto-025.jpg'></img>
+	<img src='fts/foto-026.jpg'></img>
+	<img src='fts/foto-027.jpg'></img>
+	<img src='fts/foto-028.jpg'></img>
+	<img src='fts/foto-029.jpg'></img>
+	<img src='fts/foto-030.jpg'></img>
+</div>
+
+<script>
+
+	Galleria.loadTheme('js/themes/classic/galleria.classic.js');
+	$('#galleria').galleria({
+		image_crop: false,
+		transition: 'fade',
+		data_config: function(img) {
+    		return {
+        		description: $(img).next('p').html()
+    		};
+		}
+	});
+
+</script>

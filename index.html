@@ -1,21 +1,38 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" > 
 <html xmlns="http://www.w3.org/1999/xhtml"> 
 	<head>	
-		<title>Lucas e Kathia</title>	
+		<title>Kathia e Lucas</title>	
 		<meta http-equiv="Content-Type" content="text/xhtml+xml; charset=UTF-8" /> 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-		<link rel="stylesheet" href="css/stylesheet.css" />		
+		<script src="js/galleria.js"></script>
+		<link rel="stylesheet" href="css/stylesheet.css" />
+		<style>
+			#galleria {
+				width:530px;
+				height: 400px;
+				border: 3px solid #DDDDDD;
+			}
+            /*
+			html, body { 
+				background:#111
+			}
+
+			a { 
+				color:#aaa;
+			}
+			*/
+        </style>
 	</head>	
 	<body>	
 		<div id="page">			
 			<div id="content">			
-				<h1><span>Lucas e Kathia</span></h1>				
+				<h1><span>Kathia e Lucas</span></h1>				
 				<div id="mainContent">				
 					<div id="photos"><img src="img/fotos.png" alt="Fotos" /></div>					
 					<div id="container">					
 						<ul id="menu">
-							<li><a href="#" class="inicio">Kathia e Lucas</a></li>
-							<li><a href="#" class="momentos">Momentos</a></li>
+							<li><a href="#" class="inicio">O nosso casamento</a></li>
+							<li><a href="#" class="momentos">Fotos e Momentos</a></li>
 							<li><a href="#" class="mapa">Mapas e Hospedagem</a></li>
 							<li><a href="#" class="lista">Lista de Presentes</a></li>
 						</ul>						
@@ -31,7 +48,7 @@
 		</div>
 		<script>
 		
-			$("#middle").load("lista.html");
+			$("#middle").load("inicio.html");
 			
 			$(document).ready(function() {
 				
