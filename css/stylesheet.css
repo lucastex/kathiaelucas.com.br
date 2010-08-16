@@ -23,7 +23,7 @@ h1 span {display:none;}
 #container #menu li {display:block; margin-bottom:5px;}
 #container #menu li a {display:block; font-size:12px; color:#fff; padding:5px;}
 #container #menu li a:hover {background:#5e6e2f; text-decoration:none;}
-#container #middle {display:block; width:545px; margin:110px 0 0 270px;}
+#container #middle {display:block; width:550px; margin:110px 0 0 270px;}
 #container #twitter {background:url(../img/twitter.png) no-repeat; padding-top:40px; margin:310px 0 0 25px; height:250px; width:205px;}
 #container #twitter span {display:block; color:#fff; margin-bottom:15px; font-size:11px;}
 #container #twitter span a {color:#c2f6ce;}
