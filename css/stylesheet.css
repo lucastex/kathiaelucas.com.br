@@ -40,3 +40,68 @@ p {
 	text-align: justify;
 	color: #FFFFFF;
 }
+
+#cotas-container {
+	float:left;
+}
+
+#cotas-desc {
+	float:left;
+	color: #ffffff;
+	margin-left: 5px;
+	border: 2px solid #FFFFFF;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	width: 240px;
+	height: 320px;
+	padding: 10px;
+}
+
+ul.cotas {
+	width: 270px;
+	display:block;
+}
+
+ul.cotas li {
+	float:left;
+	display:inline;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	border: 1px solid #FFFFCC;
+}
+
+#cota-desc-city {
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #FFFFCC;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+#cota-desc-title {
+	line-height: 25px;
+	font-size: 14px;
+	text-decoration: underline;
+	margin-bottom: 45px;
+}
+
+#cota-desc-price {
+	width: 70%;
+	font-size: 20px;
+	background-color: #5e6e2f;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 2px solid #ffffcc;
+}
+
+#cota-desc-price-value {
+	
+}
+ 
+#cota-desc-price-text {
+	font-size: 11px;
+}
+
+#cota-desc-price-text-link {
+	color: #FFFFFF;
+}

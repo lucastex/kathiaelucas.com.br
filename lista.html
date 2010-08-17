@@ -1,191 +1,68 @@
 <h2>Lista de presentes</h2>
 
 <p>Para facilitar, colocamos abaixo alguns itens de nossa viagem de lua de mel, para caso você queira nos presentear com parte desta viagem!</p>
-<br />
-
-<style>  
-
-	#cotas-container {
-		float:left;
-	}
-
-    #cotas-desc {
-		float:left;
-		color: #ffffff;
-		margin-left: 5px;
-		border: 2px solid #FFFFFF;
-		-moz-border-radius: 5px;
-		-webkit-border-radius: 5px;
-		width: 240px;
-		height: 320px;
-		padding: 10px;
-	}
-
-	ul.cotas {
-		display:block;
-	}
-
-	ul.cotas li {
-		float:left;
-		display:inline;
-		margin-right: 5px;
-		margin-bottom: 5px;
-		border: 1px solid #FFFFCC;
-	}
-	
-	#cota-desc-city {
-		font-size: 20px;
-		text-transform: uppercase;
-		color: #FFFFCC;
-		margin-top: 60px;
-		margin-bottom: 20px;
-	}
-	
-	#cota-desc-title {
-		font-size: 14px;
-		text-decoration: underline;
-		margin-bottom: 45px;
-	}
-	
-	#cota-desc-price {
-		width: 70%;
-		font-size: 20px;
-		background-color: #5e6e2f;
-		padding-top: 10px;
-		padding-bottom: 10px;
-		border: 2px solid #ffffcc;
-	}
-	
-	.cota-desc-price-value {
-		
-	}
-	
-	.cota-desc-price-text {
-		font-size: 11px;
-	}
-	
-</style>
+<p style="margin-bottom:10px">Veja detalhes da cota clicando nos icones abaixo.</p>
 
 <div id="cotas-container">
 
-	<ul class="cotas">
-		<li><a href="#"><img src="img/icons/torre-eiffel.jpg"></img></a></li>
-		<li><a href="#"><img src="img/icons/batou-mouche.jpg"></img></a></li>
-		<li><a href="#"><img src="img/icons/torre-eiffel.jpg"></img></a></li>
-		<li><a href="#"><img src="img/icons/torre-eiffel.jpg"></img></a></li>
-	</ul>
-	<ul class="cotas">
-		<li><a href="#"><img src="img/icons/torre-eiffel.jpg"></img></a></li>
-		<li><a href="#"><img src="img/icons/torre-eiffel.jpg"></img></a></li>
-		<li><a href="#"><img src="img/icons/torre-eiffel.jpg"></img></a></li>
-		<li><a href="#"><img src="img/icons/torre-eiffel.jpg"></img></a></li>
-	</ul>
-	<ul class="cotas">
-		<li><a href="#"><img src="img/icons/torre-eiffel.jpg"></img></a></li>
-		<li><a href="#"><img src="img/icons/torre-eiffel.jpg"></img></a></li>
-		<li><a href="#"><img src="img/icons/torre-eiffel.jpg"></img></a></li>
-		<li><a href="#"><img src="img/icons/torre-eiffel.jpg"></img></a></li>
-	</ul>
-	<ul class="cotas">
-		<li><a href="#"><img src="img/icons/torre-eiffel.jpg"></img></a></li>
-		<li><a href="#"><img src="img/icons/torre-eiffel.jpg"></img></a></li>
-		<li><a href="#"><img src="img/icons/torre-eiffel.jpg"></img></a></li>
-		<li><a href="#"><img src="img/icons/torre-eiffel.jpg"></img></a></li>
-	</ul>
-	<ul class="cotas">
-		<li><a href="#"><img src="img/icons/torre-eiffel.jpg"></img></a></li>
-		<li><a href="#"><img src="img/icons/torre-eiffel.jpg"></img></a></li>
-		<li><a href="#"><img src="img/icons/torre-eiffel.jpg"></img></a></li>
-		<li><a href="#"><img src="img/icons/torre-eiffel.jpg"></img></a></li>
+	<ul class="cotas" id="listaCotas">
 	</ul>
 	
 </div>
 
 <div id="cotas-desc" align="center">
 	<div id="cota-desc-city">Em Paris</div>
-	<div id="cota-desc-title">Subida a torre Eiffel</div>
+	<div id="cota-desc-title">Subida à Torre Eiffel</div>
 	<div id="cota-desc-price">
-		<span class="cota-desc-price-value">R$ 160,00</span> <br />
-		<span class="cota-desc-price-text">clique para presentear</span>
+		<span id="cota-desc-price-value">R$ 160,00</span> <br />
+		<span id="cota-desc-price-text"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HBYCMHESTQRKE" id="cota-desc-price-text-link">clique para presentear</a></span>
 	</div>
 </div>
-
+                        
 <script>
 
-	$(document).ready(function() {
-		populaCotas();
-	});
-
-	function populaCotas() {
-
-		var cotasFr = new Array(new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HBYCMHESTQRKE","Subida à Torre Eiffel","160"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TQLSW56GTNWS4","Passeio de Bateaux Mouches no Rio Sena","80"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SK7PQ28X5H5TL","Ida ao museu do Louvre","135"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=A8VLDJ48PP7A2","Tarde de compras na Champs-Élysées","450"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MYQTR2U9TKXPG","Visita ao palácio de Versailles","180"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RH2YC8KRT3BBA","Tour pela igreja de Notre-dame","100"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZR5M79WYLJCFL","Uma diária do hotel","250"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=G2ZX85932HLYQ","Duas diárias do hotel","500"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=D9CDJ8SH4SLX2","Três diárias do hotel","750"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HNSDCBDYQEJBN","Lanche da tarde no Café Marly","80"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=B3ZS3QQCGR43A","Subida no Arco do Triunfo","75"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=S4CQPEXMMZ5QY","Espetáculo na Opera Garnier","250"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CFXCABUSDQCRY","Entradas para o tour na Igreja de Sacré-Coeur","120"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9YQZ86VHLS72Y","Acesso aos Jardins de Luxemburgo","80"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GHFWG4AT63PAA","Entrada no Museu de Rodin","70"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TT5BUNDAL79US","Passe ao Museu do Picasso","90"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W5TCFMJ5TEUK6","Souvenirs da Galeria Lafayette","150"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9FS9Y3AB6QBF4","Visita ao moinho do Moulin Rouge","110"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=X7J8NK3QND95Y","Tarde de passeio no Quartier Latin","100"));
-							
-		var cotasUs = new Array(new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JRESTD6Z9WZV4","Ida do Lucas à Apple Store","800"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=229KLDBZY4CUN","Passeio de barco até a estátua da liberdade","110"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3D76J8CHAN2V6","Ida da Kathia ao outlet da prada","500"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8PM347Q4TG6VC","Espetáculo do Cirque du Soleil","260"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=V2Y2T8HM2Y5EY","Espetáculo da Broadway","200"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZK8VV8XESBGR8","Entrada no museu de cera Madame Tussauds","100"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZCT866DLM5E5E","Uma diária do hotel","300"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2429FH6N4NY8W","Duas diárias do hotel","600"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=F8NQW5NJH3ZF2","Três diárias do hotel","900"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MB7WMSW6RG3Q8","Jogo de basquete no Madison Square Garden","90"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=K3ECFTYKCV3NJ","Passe de metrô para a semana","100"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HD95UL55RL8Y6","Passagens de trem para ida ao outlet","90"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JFRZ98UHN86FQ","Entradas para o outlet Woodbury","65"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DM9ZBPJMK2PQC","Passeio na Times Square","140"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZS3K8Z8J4QMEE","Visita ao Empire State Building","110"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W7E854HWCZYSL","Patinação no gelo no Rockfeller center","135"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=93SL83U9UCTV4","Entrada no Museu de Guggenheim","100"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KG9MUMFCFQCWN","Passeio de Charrete no Central Park","95"),
-								new Array("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H22YA5ZM8QNRG","Manhã na Macy's","190"));
+		for (i = 0; i < cotasArray.length; i++) {
+			var cotaArray 	= cotasArray[i];
+			var cotaId 		= cotaArray[0];
+			var cotaUrl 	= "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id="+cotaArray[1];
+			var cotaImg 	= cotaArray[2];
+			var cotaTitulo 	= cotaArray[3];
+			var cotaValor 	= cotaArray[4];    
 	
-		//popula(cotasFr, cotasUs);
-
-	}
-
-	function popula(cotasFr, cotasUs) {
-		
-		for (i = 0; i < cotasFr.length; i++) {
-			var frArray = cotasFr[i];
-			var frUrl = frArray[0];
-			var frTitulo = frArray[1];
-			var frValor = frArray[2];
-
-			var usArray = cotasUs[i];
-			var usUrl = usArray[0];
-			var usTitulo = usArray[1];
-			var usValor = usArray[2];    
-
-			var htmlText  = "";
-			    htmlText += "<tr><td valign=\"top\">";
-			    htmlText += "<div class=\"cota-general\" align=\"left\"><div class=\"cota-left-icon\"><img src=\"img/paris.jpg\"></img></div><div class=\"cota-left-content\"><p class=\"cota-title\">"+frTitulo+"</p><span class=\"cota-description\">"+frTitulo+"</span> - <span class=\"cota-price\">R$ "+usValor+",00</span></div></div>";
-				htmlText += "</td><td>";
-    			htmlText += "<div class=\"cota-general\" align=\"left\"><div class=\"cota-left-icon\"><img src=\"img/ny.gif\"></img></div><div class=\"cota-left-content\"><p class=\"cota-title\">"+usTitulo+"</p><span class=\"cota-description\">"+usTitulo+"</span> - <span class=\"cota-price\">R$ "+usValor+",00</span></div></div>";
-				htmlText += "</td></tr>";
-			
-			$("#tabelaCotas").append(htmlText);
+			var htmlText  = "<li><a href=\"#\" id=\""+cotaId+"\" class=\"cota-icon\"><img src=\""+cotaImg+"\"></img></a></li>";			
+			$("#listaCotas").append(htmlText);
 		}
+	
+        $(".cota-icon").click(function() {
+
+    		var thisCotaId = $(this).attr("id");
 		
-	}
+   			for (i = 0; i < cotasArray.length; i++) {
+			
+				var cotaArray 	= cotasArray[i];
+				var cotaId 		= cotaArray[0];
+			
+				if (cotaId == thisCotaId) {
+				
+					var cotaUrl 	= "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id="+cotaArray[1];
+					var cotaImg 	= cotaArray[2];
+					var cotaTitulo 	= cotaArray[3];
+					var cotaValor 	= cotaArray[4];    
+				
+					if (cotaId.substring(0, 2) == "FR") {
+						$("#cota-desc-city").html("Em Paris");
+					} else {
+						$("#cota-desc-city").html("Em Nova York");
+					}
+					$("#cota-desc-title").html(cotaTitulo);
+					$("#cota-desc-price-value").html("R$ "+cotaValor+",00");
+					$("#cota-desc-price-text-link").attr("href", cotaUrl);
+				}		   
+			}
+		
+			return false;
+		});  	
+
 </script>
 
 <!-- <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HBYCMHESTQRKE">Subida à Torre Eiffel - <span>R$ 160,00</span></a></li> -->
