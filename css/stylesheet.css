@@ -39,49 +39,4 @@ p {
 	font-size: 12px;
 	text-align: justify;
 	color: #FFFFFF;
-}                                                  
-
-#cotas-container {
-	margin-top: 15px;
-}
-
-#cotas-paris {
-	float: left;
-	margin-right: 7px;
-}
-
-#cotas-ny {
-	float: left;
-}
-
-.cotas {
-	width: 265px;
-	border: 2px solid #FFFFCC;
-}
-
-.cotas-titulo {
-	padding: 7px;
-	text-align: center;
-	font-size: 13px;
-	color: #1F2B03;
-	background-color: #B2B68F;
-}
-
-.cotas ul {
-	margin-bottom: 5px;
-	margin-left: 15px;
-}
-
-.cotas ul li {
-	padding-top: 5px;
-	font-size: 11px;
-}
-
-.cotas ul li a {
-	color: #FFFFFF;
-	font-weight: bold;
-}
-
-.cotas ul li a span {
-	font-weight: normal;
 }
