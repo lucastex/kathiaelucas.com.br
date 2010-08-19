@@ -58,14 +58,14 @@ p {
 }
 
 ul.cotas {
-	width: 270px;
+	width: 260px;
 	display:block;
 }
 
 ul.cotas li {
 	float:left;
 	display:inline;
-	margin-right: 5px;
+	margin-right: 3px;
 	margin-bottom: 5px;
 	border: 1px solid #FFFFCC;
 }
@@ -104,4 +104,77 @@ ul.cotas li {
 
 #cota-desc-price-text-link {
 	color: #FFFFFF;
+}
+
+
+.local-header {
+	text-transform: uppercase;
+	color: #5e6e2f;
+	background-color: #FFFFCC;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	letter-spacing: 2px;
+	border-bottom: 3px solid #5e6e2f;
+	font-size: 13px;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+	border-left: 1px solid #5e6e2f;
+	border-right: 1px solid #5e6e2f;
+}
+
+.local-body {
+	margin-top: 0px;
+	border-bottom: 3px solid #5e6e2f;
+	padding: 5px;
+	padding-left: 10px;
+	background-color: #8b904d;
+	color: #eeeeee;
+	margin-bottom: 0px;
+	border-left: 1px solid #5e6e2f;
+	border-right: 1px solid #5e6e2f;
+}
+
+.local-body-text {
+	vertical-align: middle;
+}
+
+.local-icon {
+	vertical-align: middle;
+	margin-right: 15px;
+	margin-left: -40px;
+}
+
+.local-nome {
+	font-weight: bold;
+	letter-spacing: 1px;
+	line-height: 25px;
+}
+
+.local-link {
+	color: #dddddd;
+}
+
+.button-map {
+	position: absolute;
+	padding: 5px;
+	padding-left: 20px;
+	padding-right: 20px;	
+	border: 2px solid #5e6e2f;
+	color: #000000;
+	background-color: #eeeeee;
+}
+.button-map.vernogmaps {
+	left: 600px;
+	top: 530px;
+}
+.button-map.mapa-ampliado {
+	left: 615px;
+	top: 490px;
+}
+
+.map-div {
+	position:absolute;
+	left: 545px;
+	top: 170px;
 }

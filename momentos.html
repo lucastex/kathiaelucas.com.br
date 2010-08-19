@@ -1,20 +1,28 @@
 <div class="slideshow"> 
 		
-	<img src='foto/001.jpg' width="400"></img>
-	<img src='foto/002.jpg' width="400"></img>
-	<img src='foto/003.jpg' width="400"></img>
-	<img src='foto/004.jpg' width="400"></img>
-	<img src='foto/005.jpg' width="400"></img>
-	<img src='foto/006.jpg' width="400"></img>
-	<img src='foto/007.jpg' width="400"></img>
-	<img src='foto/008.jpg' width="400"></img>
-	<img src='foto/009.jpg' width="400"></img>
-	<img src='foto/010.jpg' width="400"></img>
 
 </div>
 
                
 <script type="text/javascript">
+
+	var total_fotos = 29;
+	var indexes = new Array()
+	
+	for (i=1; i<=total_fotos; i++) {
+		indexes[indexes.length] = i
+	}
+	
+	for (i=1; i<=total_fotos; i++) {
+		
+		var foto_index = indexes[Math.floor(Math.random() * indexes.length)]
+		indexes = jQuery.grep(indexes, function(value) {
+			return value != foto_index;
+		});
+		$(".slideshow").append("<img src=\"foto/"+foto_index+".jpg\" width=\"400\"></img>")
+	}
+	
+	
 	$(document).ready(function() {
 	    $('.slideshow').cycle({
 			fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
