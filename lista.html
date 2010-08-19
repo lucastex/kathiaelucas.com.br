@@ -15,10 +15,24 @@
 	<div id="cota-desc-title">Subida à Torre Eiffel</div>
 	<div id="cota-desc-price">
 		<span id="cota-desc-price-value">R$ 160,00</span> <br />
-		<span id="cota-desc-price-text"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HBYCMHESTQRKE" id="cota-desc-price-text-link">clique para presentear</a></span>
+		<span id="cota-desc-price-text"><a class="cota-link" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HBYCMHESTQRKE" id="cota-desc-price-text-link">clique para presentear</a></span>
 	</div>
 </div>
-                        
+
+<div style='display:none'>
+
+	<div id='inline_paypal' style='padding:10px; background:#fff'>
+		<p style="color: #000000"><strong>Antes de tudo, muito obrigado!</strong><br /></p>
+		<p style="color: #000000">
+			Você será redirecionado ao site do Paypal para finalizar o processo.<br /><br />
+			Caso você tenha uma conta do paypal, basta se logar para continuar com o pagamento. Caso não tenha uma conta do paypal,
+			basta aguardar a página carregar e clicar na barra com o texto <strong>"Pagar com um cartão de crédito"</strong> para efetuar o pagamento diretamente em seu cartão de crédito. <br />
+		</p>
+		<br />
+		<p align="center"><a id="paypalButton" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HBYCMHESTQRKE" style='padding:5px; background:#ccc;'>Clique aqui para continuar</a></p>
+	</div>
+</div> 
+                       
 <script>
 
 		for (i = 0; i < cotasArray.length; i++) {
@@ -61,8 +75,13 @@
 			}
 		
 			return false;
+		});
+
+		$(".cota-link").colorbox({width:"50%", inline:true, href:"#inline_paypal"});			
+		
+		$(".cota-link").click(function() {		
+			var url = $(this).attr("href");
+			$("#paypalButton").attr("href", url);
 		});  	
 
 </script>
-
-<!-- <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HBYCMHESTQRKE">Subida à Torre Eiffel - <span>R$ 160,00</span></a></li> -->
