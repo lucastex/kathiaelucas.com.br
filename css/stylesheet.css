@@ -74,15 +74,15 @@ ul.cotas li {
 	font-size: 20px;
 	text-transform: uppercase;
 	color: #FFFFCC;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 #cota-desc-title {
 	line-height: 25px;
 	font-size: 14px;
 	text-decoration: underline;
-	margin-bottom: 45px;
+	margin-bottom: 10px;
 }
 
 #cota-desc-price {
@@ -104,8 +104,11 @@ ul.cotas li {
 
 #cota-desc-price-text-link {
 	color: #FFFFFF;
-}
+}           
 
+#yaren {
+	color: #FFFFFF;
+}
 
 .local-header {
 	text-transform: uppercase;
@@ -179,8 +182,10 @@ ul.cotas li {
 	top: 170px;
 }
 
-#cota-desc-presential {    
-	margin-top: 5px;
+#cota-desc-presential {
+	text-align: center;
+	line-height: 20px;    
+	margin-top: 15px;
 	width: 90%;
 	font-size: 12px;
 	background-color: #5e6e2f;
@@ -188,4 +193,8 @@ ul.cotas li {
 	padding-bottom: 5px; 
 	padding-left: 5px;
 	border: 2px solid #ffffcc;
+}
+
+#cota-pag-cartoes {
+	margin-top: 5px;
 }

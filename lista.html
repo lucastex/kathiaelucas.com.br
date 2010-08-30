@@ -17,24 +17,62 @@
 		<span id="cota-desc-price-value">R$ 160,00</span> <br />
 	</div>
 	<p id="cota-desc-presential">
-		Você pode clicar <span id="cota-desc-price-text"><a class="cota-link" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HBYCMHESTQRKE" id="cota-desc-price-text-link">aqui</a></span> para presentear online ou caso prefira
-		pode presentear diretamente na Yaren Turismo, agência da nossa lua-de-mel.
-		
+		Clique <span id="cota-desc-price-text"><a class="cota-link" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HBYCMHESTQRKE" id="cota-desc-price-text-link">aqui</a></span> para presentear diretamente pelo site (online).
+		<br /><br />
+		Caso prefira clique <a href="#" id="yaren">aqui</a> para conhecer outra forma de presentear.
 	</p>
+	<div id="cota-pag-cartoes" align="center">
+		<img border="0" src="img/icons/pag/visa.gif" alt="Cartão de Crédito Visa" />
+		<img border="0" src="img/icons/pag/master.gif" alt="Cartão de Crédito Mastercard" />
+		<img border="0" src="img/icons/pag/amex.gif" alt="Cartão de Crédito American Express" />
+		<img border="0" src="img/icons/pag/diners.gif" alt="Cartão de Crédito Diners" /><br />		
+		<img border="0" src="img/icons/pag/boleto.gif" alt="Boleto bancário" />
+		<img border="0" src="img/icons/pag/itau.gif" alt="Débito Itaú" />
+		<img border="0" src="img/icons/pag/bb.gif" alt="Débito Banco do brasil" />		
+	</div>
 </div>
 
 <div style='display:none'>
-
 	<div id='inline_paypal' style='padding:10px; background:#fff'>
 		<p style="color: #000000"><strong>Antes de tudo, muito obrigado!</strong><br /></p>
 		<p style="color: #000000">
-			Você será redirecionado ao site do Paypal para finalizar o processo.<br /><br />
-			Caso você tenha uma conta do paypal, basta se logar para continuar com o pagamento. Caso não tenha uma conta do paypal,
-			basta aguardar a página carregar e clicar na barra com o texto <strong>"Pagar com um cartão de crédito"</strong> para efetuar o pagamento diretamente em seu cartão de crédito. <br />
+			Você será redirecionado ao site do PagSeguro para finalizar o processo.<br /><br />
+			Basta você seguir os passos do site para finalizar a compra. O primeiro passo será informar seu CEP para preencher o seu endereço,
+			e após isto, finalizar o pagamento.<br />
+			Qualquer dúvida durante o processo, pode me enviar um e-mail (<strong>lucastex@gmail.com</strong>).<br />
+		</p>
+		<p align="center">
+			<form id="formulario" target="" method="post" action="https://pagseguro.uol.com.br/checkout/checkout.jhtml">
+				<input type="hidden" name="email_cobranca" value="lucastex@gmail.com">
+				<input type="hidden" name="tipo" value="CP">
+		    	<input type="hidden" name="moeda" value="BRL">		
+				<input type="hidden" name="item_id_1" value="1">
+				<input type="hidden" name="encoding" value="UTF-8">
+		    	<input id="item_descr_1" type="hidden" name="item_descr_1" value="PARIS - Subida à Torre Eiffel">
+		    	<input type="hidden" name="item_frete_1" value="0">
+		    	<input type="hidden" name="item_quant_1" value="1">
+		    	<input id="item_valor_1" type="hidden" name="item_valor_1" value="16000"> 
+				<br />
+				<input style="padding:5px; background:#ccc;" type="submit" value="Efetuar o pagamento" alt="Pague com PagSeguro - é rápido, grátis e seguro!">
+			</form>
+		</p>
+	</div>
+</div> 
+
+<div style='display:none'>
+	<div id='inline_yaren' style='padding:10px; background:#fff'>
+		<p style="color: #000000"><strong>Antes de tudo, muito obrigado!</strong><br /></p>
+		<p style="color: #000000">
+			Caso você opte por não fazer o pagamento de forma online, pode entrar em contato diretamente com a 
+			Yaren Turismo, agência responsável por nossa Lua de Mel. <br /><br />
+			
+			<strong>Telefone: </strong>(43) 3325-0125<br />
+			<strong>Contato: </strong>Samuel ou Rose<br />
+			<strong>Endereço: </strong>Av. Higienópolis, 210 – Loja 06 - Trade Center - Londrina - PR<br />
 		</p>
 		<br />
 		<p align="center">
-				<a id="paypalButton" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HBYCMHESTQRKE" style='padding:5px; background:#ccc;'>Clique aqui para continuar</a>
+			<a id="closeYarenButton" href="#" style='padding:5px; background:#ccc;'>Clique aqui para fechar esta janela</a>
 		</p>
 	</div>
 </div> 
@@ -64,19 +102,22 @@
 			
 				if (cotaId == thisCotaId) {
 				
-					var cotaUrl 	= "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id="+cotaArray[1];
 					var cotaImg 	= cotaArray[2];
 					var cotaTitulo 	= cotaArray[3];
 					var cotaValor 	= cotaArray[4];    
 				
 					if (cotaId.substring(0, 2) == "FR") {
-						$("#cota-desc-city").html("Em Paris");
+						$("#cota-desc-city").html("Em Paris");  
+						$("#item_descr_1").val("PARIS - "+cotaTitulo);
+						
 					} else {
 						$("#cota-desc-city").html("Em Nova York");
+						$("#item_descr_1").val("NOVA YORK - "+cotaTitulo);
 					}
 					$("#cota-desc-title").html(cotaTitulo);
 					$("#cota-desc-price-value").html("R$ "+cotaValor+",00");
-					$("#cota-desc-price-text-link").attr("href", cotaUrl);
+					
+					$("#item_valor_1").val(cotaValor+"00");
 				}		   
 			}
 		
@@ -84,10 +125,14 @@
 		});
 
 		$(".cota-link").colorbox({width:"50%", inline:true, href:"#inline_paypal"});			
-		
-		$(".cota-link").click(function() {		
-			var url = $(this).attr("href");
-			$("#paypalButton").attr("href", url);
-		});  	
 
+		$("#yaren").colorbox({width:"50%", inline:true, href:"#inline_yaren"});			
+		   
+		$("#closeYarenButton").click(function() {
+		
+			$("#yaren").colorbox.close();
+			return false;
+			
+		});
+		
 </script>
