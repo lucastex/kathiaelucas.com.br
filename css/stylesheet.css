@@ -1,6 +1,6 @@
 /* Geral - Componentes Basicos  */
 * {margin:0; padding:0;}
-html { background-color: #AFCFE6;}
+html { background-color: #FFFFFF;}
 body {font-size:62.5%; /* line-height:1.25; */ font-family: verdana, freesans, garuda, helvetica, sans-serif; color: #666; background-color: #FFF;}
 img, ul, a, fieldset {border: 0; list-style: none}
 a{cursor: pointer; text-decoration:none;}
@@ -74,8 +74,8 @@ ul.cotas li {
 	font-size: 20px;
 	text-transform: uppercase;
 	color: #FFFFCC;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 #cota-desc-title {
@@ -185,7 +185,7 @@ ul.cotas li {
 #cota-desc-presential {
 	text-align: center;
 	line-height: 20px;    
-	margin-top: 15px;
+	margin-top: 10px;
 	width: 90%;
 	font-size: 12px;
 	background-color: #5e6e2f;
@@ -196,5 +196,5 @@ ul.cotas li {
 }
 
 #cota-pag-cartoes {
-	margin-top: 5px;
+	margin-top: 15px;
 }
