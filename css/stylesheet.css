@@ -41,6 +41,11 @@ p {
 	color: #FFFFFF;
 }
 
+p.big {
+	font-size: 14px;
+	margin-bottom: 16px;
+}
+
 #cotas-container {
 	float:left;
 }
@@ -198,3 +203,48 @@ ul.cotas li {
 #cota-pag-cartoes {
 	margin-top: 15px;
 }
+
+#countdown_title {
+	text-align: center;
+	margin-bottom: 15px;
+	color: #FFFFCC;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+#countdown_dashboard {
+	margin-top: 10px;
+}
+
+.dash {
+	width: 110px;
+	height: 80px;
+	background: transparent url('../images/dash.png') 0 0 no-repeat;
+	float: left;
+	margin-left: 20px;
+	position: relative;
+}
+
+.dash .digit {
+	font-size: 55pt;
+	font-weight: bold;
+	float: left;
+	width: 55px;
+	text-align: center;
+	font-family: Times;
+	color: #FFFFCC;
+	position: relative;
+}
+
+.dash_title {
+	position: absolute;
+	display: block;
+	text-align: center;
+	bottom: 0px;
+	right: 6px;
+	font-size: 9pt;
+	color: #FFFFCC;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+

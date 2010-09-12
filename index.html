@@ -5,13 +5,27 @@
 		<meta http-equiv="Content-Type" content="text/xhtml+xml; charset=UTF-8" /> 
 		<script src="js/jquery.min.js"></script>
 		<script src="js/jquery.colorbox-min.js"></script>
-		<script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script>
+		<script src="js/jquery.cycle.all.latest.js"></script>
+		<script src="js/jquery.lwtCountdown-1.0.js"></script>
 		<link rel="stylesheet" href="css/colorbox.css" />
 		<link rel="stylesheet" href="css/stylesheet.css" />
 		<style type="text/css">
 			.slideshow { margin-left: 60px; margin-top: 5px;}
 			.slideshow img { padding: 15px; border: 2px solid #ccc; background-color: #5e6e2f; }
 		</style>
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-16760173-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
 	</head>	
 	<body>	
 		<div id="page">			
@@ -35,44 +49,39 @@
 		</div>
 		<script>
 		
-			$("#middle").load("lista.html");
+			$("#middle").load("inicio.html");
 			
 			$(document).ready(function() {
 				
 				$(".inicio").click(function() {
-					$("#middle").load("inicio.html");
+					$("#middle").load("inicio.html", function() {
+						_gaq.push(['_trackEvent', 'Kathia-e-Lucas', 'Menu', 'inicio.html']);
+					});
 					return false;
 				});
 				
 				$(".momentos").click(function() {
-					$("#middle").load("momentos.html");
+					$("#middle").load("momentos.html", function() {
+						_gaq.push(['_trackEvent', 'Kathia-e-Lucas', 'Menu', 'momentos.html']);
+					});
 					return false;
 				});
 				
 				$(".mapa").click(function() {
-					$("#middle").load("mapa.html");
+					$("#middle").load("mapa.html", function() {
+						_gaq.push(['_trackEvent', 'Kathia-e-Lucas', 'Menu', 'mapa.html']);
+					});
 					return false;
 				});
 				
 				$(".lista").click(function() {
-					$("#middle").load("lista.html");
+					$("#middle").load("lista.html", function() {
+						_gaq.push(['_trackEvent', 'Kathia-e-Lucas', 'Menu', 'lista.html']);
+					});
 					return false;
 				});
 			});
 		
-		</script>
-		<script type="text/javascript">
-
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-16760173-1']);
-		  _gaq.push(['_trackPageview']);
-
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-
 		</script>
 	</body>
 </html>
