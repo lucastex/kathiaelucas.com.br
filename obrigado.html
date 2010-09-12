@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" > 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+	<head>	
+		<title>Kathia e Lucas</title>	
+		<meta http-equiv="Content-Type" content="text/xhtml+xml; charset=UTF-8" /> 
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.colorbox-min.js"></script>
+		<script src="js/jquery.cycle.all.latest.js"></script>
+		<script src="js/jquery.lwtCountdown-1.0.js"></script>
+		<link rel="stylesheet" href="css/colorbox.css" />
+		<link rel="stylesheet" href="css/stylesheet.css" />
+		<style type="text/css">
+			.slideshow { margin-left: 60px; margin-top: 5px;}
+			.slideshow img { padding: 15px; border: 2px solid #ccc; background-color: #5e6e2f; }
+		</style>
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-16760173-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+	</head>	
+	<body>	
+		<div id="page">			
+			<div id="content">			
+				<h1><span>Kathia e Lucas</span></h1>				
+				<div id="mainContent">				
+					<div id="photos"><img src="img/fotos.png" alt="Fotos" /></div>					
+					<div id="container">					
+						<ul id="menu">
+							<li><a href="#" class="inicio">O nosso casamento</a></li>
+							<li><a href="#" class="momentos">Fotos e Momentos</a></li>
+							<li><a href="#" class="mapa">Mapa e Localização</a></li>
+							<li><a href="#" class="lista">Lista de Presentes</a></li>
+						</ul>						
+						<div id="middle" class="scroll">  
+							
+							<h2>Muito obrigado!</h2>
+							<p>Nós agradecemos seu presente!</p>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+					
+			$(document).ready(function() {
+				
+				$(".inicio").click(function() {
+					$("#middle").load("inicio.html", function() {
+						_gaq.push(['_trackEvent', 'Kathia-e-Lucas', 'Menu', 'inicio.html']);
+					});
+					return false;
+				});
+				
+				$(".momentos").click(function() {
+					$("#middle").load("momentos.html", function() {
+						_gaq.push(['_trackEvent', 'Kathia-e-Lucas', 'Menu', 'momentos.html']);
+					});
+					return false;
+				});
+				
+				$(".mapa").click(function() {
+					$("#middle").load("mapa.html", function() {
+						_gaq.push(['_trackEvent', 'Kathia-e-Lucas', 'Menu', 'mapa.html']);
+					});
+					return false;
+				});
+				
+				$(".lista").click(function() {
+					$("#middle").load("lista.html", function() {
+						_gaq.push(['_trackEvent', 'Kathia-e-Lucas', 'Menu', 'lista.html']);
+					});
+					return false;
+				});
+			});
+		
+		</script>
+	</body>
+</html>
