@@ -1,147 +1,199 @@
-<h2>Lista de presentes</h2>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" > 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+	<head>	
+		<title>Kathia e Lucas</title>	
+		<meta http-equiv="Content-Type" content="text/xhtml+xml; charset=UTF-8" /> 
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.colorbox-min.js"></script>
+		<script src="js/jquery.cycle.all.latest.js"></script>
+		<script src="js/jquery.lwtCountdown-1.0.js"></script>
+		<link rel="stylesheet" href="css/colorbox.css" />
+		<link rel="stylesheet" href="css/stylesheet.css" />
+		<style type="text/css">
+			.slideshow { margin-left: 60px; margin-top: 5px;}
+			.slideshow img { padding: 15px; border: 2px solid #ccc; background-color: #5e6e2f; }
+		</style>
+		<script type="text/javascript">
 
-<p>Para facilitar, colocamos abaixo alguns itens de nossa viagem de lua de mel, para caso você queira nos presentear com parte desta viagem!</p>
-<p style="margin-bottom:10px">Veja detalhes de cada cota clicando nos icones abaixo.</p>
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-16760173-1']);
+		  _gaq.push(['_trackPageview']);
 
-<div id="cotas-container">
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
 
-	<ul class="cotas" id="listaCotas">
-	</ul>
-	
-</div>
+		</script>
+	</head>	
+	<body>	
+		<div id="page">			
+			<div id="content">			
+				<h1><span>Kathia e Lucas</span></h1>				
+				<div id="mainContent">				
+					<div id="photos"><img src="img/fotos.png" alt="Fotos" /></div>					
+					<div id="container">					
+						<ul id="menu">
+							<li><a href="index.html" class="inicio">O nosso casamento</a></li>
+							<li><a href="momentos.html" class="momentos">Fotos e Momentos</a></li>
+							<li><a href="mapa.html" class="mapa">Mapa e Localização</a></li>
+							<li><a href="presentes.html" class="lista">Lista de Presentes</a></li>
+						</ul>						
+						<div id="middle" class="scroll">  
+							
+							<h2>Cotas de viagem</h2>
 
-<div id="cotas-desc" align="center">
-	<div id="cota-desc-city">Em Paris</div>
-	<div id="cota-desc-title">Subida à Torre Eiffel</div>
-	<div id="cota-desc-price">
-		<span id="cota-desc-price-value">R$ 160,00</span> <br />
-	</div>
-	<p id="cota-desc-presential">
-		Clique <span id="cota-desc-price-text"><a class="cota-link" href="#" id="cota-desc-price-text-link">aqui</a></span> para presentear diretamente pelo site (online), ou caso prefira clique <a href="#" id="yaren">aqui</a> para conhecer outra forma de presentear.
-	</p>
-	<div id="cota-pag-cartoes" align="center">
-		<img border="0" src="img/icons/pag/visa.gif" alt="Cartão de Crédito Visa" />
-		<img border="0" src="img/icons/pag/master.gif" alt="Cartão de Crédito Mastercard" />
-		<img border="0" src="img/icons/pag/amex.gif" alt="Cartão de Crédito American Express" />
-		<img border="0" src="img/icons/pag/diners.gif" alt="Cartão de Crédito Diners" /><br />		
-		<img border="0" src="img/icons/pag/boleto.gif" alt="Boleto bancário" />
-		<img border="0" src="img/icons/pag/itau.gif" alt="Débito Itaú" />
-		<img border="0" src="img/icons/pag/bb.gif" alt="Débito Banco do brasil" />		
-	</div>
-</div>
+							<p>Para facilitar, colocamos abaixo alguns itens de nossa viagem de lua de mel, para caso você queira nos presentear com parte desta viagem!</p>
+							<p style="margin-bottom:10px">Veja detalhes de cada cota clicando nos icones abaixo.</p>
 
-<div style='display:none'>
-	<div id='inline_paypal' style='padding:10px; background:#fff'>
-		<p style="color: #000000"><strong>Antes de tudo, muito obrigado!</strong><br /></p>
-		<p style="color: #000000">
-			Você será redirecionado ao site do PagSeguro para finalizar o processo. Basta você seguir os passos abaixo. <br /><br />
-			O primeiro passo será informar seu CEP para preencher o seu endereço. Logo após o CEP, você irá preencher seu nome, email e telefone.
-			Estas informações serão enviadas para nós, para podermos identificar quem é você e o presente que está nos dando!<br /><br />
-			Após isto, basta escolher como vai efetuar o pagamento, poderá imprimir um boleto, ou parcelar no cartão em até 12x.
-			Qualquer dúvida durante o processo, pode me enviar um e-mail (<strong>lucastex@gmail.com</strong>).<br />
-		</p>
-		<p align="center">
-			<form id="formulario" target="" method="post" action="https://pagseguro.uol.com.br/checkout/checkout.jhtml">
-				<input type="hidden" name="email_cobranca" value="lucastex@gmail.com">
-				<input type="hidden" name="tipo" value="CP">
-		    	<input type="hidden" name="moeda" value="BRL">		
-				<input type="hidden" name="item_id_1" value="1">
-				<input type="hidden" name="encoding" value="UTF-8">
-		    	<input id="item_descr_1" type="hidden" name="item_descr_1" value="PARIS - Subida à Torre Eiffel">
-		    	<input type="hidden" name="item_frete_1" value="0">
-		    	<input type="hidden" name="item_quant_1" value="1">
-		    	<input id="item_valor_1" type="hidden" name="item_valor_1" value="16000"> 
-				<br />
-				<input style="padding:5px; background:#ccc;" type="submit" value="Efetuar o pagamento" alt="Pague com PagSeguro - é rápido, grátis e seguro!">
-			</form>
-		</p>
-	</div>
-</div> 
+							<div id="cotas-container">
 
-<div style='display:none'>
-	<div id='inline_yaren' style='padding:10px; background:#fff'>
-		<p style="color: #000000"><strong>Antes de tudo, muito obrigado!</strong><br /></p>
-		<p style="color: #000000">
-			Colocamos uma lista de presentes disponível no site da Tok &amp; Stok. Para acessar basta clicar no logotipo da loja aqui em baixo!
-		</p>
-		<div style="color: #000000" align="center">
-			<br />
-			<a href="http://www.tokstok.com.br/app?service=page&amp;page=LicVer&amp;idLic=130774"><img src="img/tokstok.jpg"></a>
-			<br />
+								<ul class="cotas" id="listaCotas">
+								</ul>
+
+							</div>
+
+							<div id="cotas-desc" align="center">
+								<div id="cota-desc-city">Em Paris</div>
+								<div id="cota-desc-title">Subida à Torre Eiffel</div>
+								<div id="cota-desc-price">
+									<span id="cota-desc-price-value">R$ 160,00</span> <br />
+								</div>
+								<p id="cota-desc-presential">
+									Clique <span id="cota-desc-price-text"><a class="cota-link" href="#" id="cota-desc-price-text-link">aqui</a></span> para presentear diretamente pelo site (online), ou caso prefira clique <a href="#" id="yaren">aqui</a> para conhecer outra forma de presentear.
+								</p>
+								<div id="cota-pag-cartoes" align="center">
+									<img border="0" src="img/icons/pag/visa.gif" alt="Cartão de Crédito Visa" />
+									<img border="0" src="img/icons/pag/master.gif" alt="Cartão de Crédito Mastercard" />
+									<img border="0" src="img/icons/pag/amex.gif" alt="Cartão de Crédito American Express" />
+									<img border="0" src="img/icons/pag/diners.gif" alt="Cartão de Crédito Diners" /><br />		
+									<img border="0" src="img/icons/pag/boleto.gif" alt="Boleto bancário" />
+									<img border="0" src="img/icons/pag/itau.gif" alt="Débito Itaú" />
+									<img border="0" src="img/icons/pag/bb.gif" alt="Débito Banco do brasil" />		
+								</div>
+							</div>
+
+							<div style='display:none'>
+								<div id='inline_paypal' style='padding:10px; background:#fff'>
+									<p style="color: #000000"><strong>Antes de tudo, muito obrigado!</strong><br /></p>
+									<p style="color: #000000">
+										Você será redirecionado ao site do PagSeguro para finalizar o processo. Basta você seguir os passos abaixo. <br /><br />
+										O primeiro passo será informar seu CEP para preencher o seu endereço. Logo após o CEP, você irá preencher seu nome, email e telefone.
+										Estas informações serão enviadas para nós, para podermos identificar quem é você e o presente que está nos dando!<br /><br />
+										Após isto, basta escolher como vai efetuar o pagamento, poderá imprimir um boleto, ou parcelar no cartão em até 12x.
+										Qualquer dúvida durante o processo, pode me enviar um e-mail (<strong>lucastex@gmail.com</strong>).<br />
+									</p>
+									<p align="center">
+										<form id="formulario" target="" method="post" action="https://pagseguro.uol.com.br/checkout/checkout.jhtml">
+											<input type="hidden" name="email_cobranca" value="lucastex@gmail.com">
+											<input type="hidden" name="tipo" value="CP">
+									    	<input type="hidden" name="moeda" value="BRL">		
+											<input type="hidden" name="item_id_1" value="1">
+											<input type="hidden" name="encoding" value="UTF-8">
+									    	<input id="item_descr_1" type="hidden" name="item_descr_1" value="PARIS - Subida à Torre Eiffel">
+									    	<input type="hidden" name="item_frete_1" value="0">
+									    	<input type="hidden" name="item_quant_1" value="1">
+									    	<input id="item_valor_1" type="hidden" name="item_valor_1" value="16000"> 
+											<br />
+											<input style="padding:5px; background:#ccc;" type="submit" value="Efetuar o pagamento" alt="Pague com PagSeguro - é rápido, grátis e seguro!">
+										</form>
+									</p>
+								</div>
+							</div> 
+
+							<div style='display:none'>
+								<div id='inline_yaren' style='padding:10px; background:#fff'>
+									<p style="color: #000000"><strong>Antes de tudo, muito obrigado!</strong><br /></p>
+									<p style="color: #000000">
+										Colocamos uma lista de presentes disponível no site da Tok &amp; Stok. Para acessar basta clicar no logotipo da loja aqui em baixo!
+									</p>
+									<div style="color: #000000" align="center">
+										<br />
+										<a href="http://www.tokstok.com.br/app?service=page&amp;page=LicVer&amp;idLic=130774"><img src="img/tokstok.jpg"></a>
+										<br />
+									</div>
+									<div style="border-bottom: 1px dotted #000000"></div>
+									<p style="color: #000000">
+										Caso você queira ainda nos presentear com as cotas da viagem, mas opte por não fazer o pagamento de forma online, pode entrar em contato diretamente com a 
+										Yaren Turismo, agência responsável por nossa Lua de Mel. <br /><br />
+
+										<strong>Telefone: </strong>(43) 3325-0125<br />
+										<strong>Contato: </strong>Samuel ou Rose<br />
+										<strong>E-mail: </strong>samuel@londrina.net<br />
+										<strong>Endereço: </strong>Av. Higienópolis, 210 – Loja 06 - Trade Center - Londrina - PR<br />
+									</p>
+									<br />
+									<p align="center">
+										<a id="closeYarenButton" href="#" style='padding:5px; background:#ccc;'>Clique aqui para fechar esta janela</a>
+									</p>
+								</div>
+							</div> 
+
+							<script>
+
+									for (i = 0; i < cotasArray.length; i++) {
+										var cotaArray 	= cotasArray[i];
+										var cotaId 		= cotaArray[0];
+										var cotaUrl 	= "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id="+cotaArray[1];
+										var cotaImg 	= cotaArray[2];
+										var cotaTitulo 	= cotaArray[3];
+										var cotaValor 	= cotaArray[4];    
+
+										var htmlText  = "<li><a href=\"#\" id=\""+cotaId+"\" class=\"cota-icon\"><img src=\""+cotaImg+"\"></img></a></li>";			
+										$("#listaCotas").append(htmlText);
+									}
+
+							        $(".cota-icon").click(function() {
+
+							    		var thisCotaId = $(this).attr("id");
+
+							   			for (i = 0; i < cotasArray.length; i++) {
+
+											var cotaArray 	= cotasArray[i];
+											var cotaId 		= cotaArray[0];
+
+											if (cotaId == thisCotaId) {
+
+												var cotaImg 	= cotaArray[2];
+												var cotaTitulo 	= cotaArray[3];
+												var cotaValor 	= cotaArray[4];    
+
+												if (cotaId.substring(0, 2) == "FR") {
+													$("#cota-desc-city").html("Em Paris");  
+													$("#item_descr_1").val("PARIS - "+cotaTitulo);
+
+												} else {
+													$("#cota-desc-city").html("Em Nova York");
+													$("#item_descr_1").val("NOVA YORK - "+cotaTitulo);
+												}
+												$("#cota-desc-title").html(cotaTitulo);
+												$("#cota-desc-price-value").html("R$ "+cotaValor+",00");
+
+												$("#item_valor_1").val(cotaValor+"00");
+											}		   
+										}
+
+										return false;
+									});
+
+									$(".cota-link").colorbox({width:"50%", inline:true, href:"#inline_paypal"});			
+
+									$("#yaren").colorbox({width:"50%", inline:true, href:"#inline_yaren"});			
+
+									$("#closeYarenButton").click(function() {
+
+										$("#yaren").colorbox.close();
+										return false;
+
+									});
+
+							</script>
+							
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div style="border-bottom: 1px dotted #000000"></div>
-		<p style="color: #000000">
-			Caso você queira ainda nos presentear com as cotas da viagem, mas opte por não fazer o pagamento de forma online, pode entrar em contato diretamente com a 
-			Yaren Turismo, agência responsável por nossa Lua de Mel. <br /><br />
-			
-			<strong>Telefone: </strong>(43) 3325-0125<br />
-			<strong>Contato: </strong>Samuel ou Rose<br />
-			<strong>E-mail: </strong>samuel@londrina.net<br />
-			<strong>Endereço: </strong>Av. Higienópolis, 210 – Loja 06 - Trade Center - Londrina - PR<br />
-		</p>
-		<br />
-		<p align="center">
-			<a id="closeYarenButton" href="#" style='padding:5px; background:#ccc;'>Clique aqui para fechar esta janela</a>
-		</p>
-	</div>
-</div> 
-                       
-<script>
-
-		for (i = 0; i < cotasArray.length; i++) {
-			var cotaArray 	= cotasArray[i];
-			var cotaId 		= cotaArray[0];
-			var cotaUrl 	= "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id="+cotaArray[1];
-			var cotaImg 	= cotaArray[2];
-			var cotaTitulo 	= cotaArray[3];
-			var cotaValor 	= cotaArray[4];    
-	
-			var htmlText  = "<li><a href=\"#\" id=\""+cotaId+"\" class=\"cota-icon\"><img src=\""+cotaImg+"\"></img></a></li>";			
-			$("#listaCotas").append(htmlText);
-		}
-	
-        $(".cota-icon").click(function() {
-
-    		var thisCotaId = $(this).attr("id");
-		
-   			for (i = 0; i < cotasArray.length; i++) {
-			
-				var cotaArray 	= cotasArray[i];
-				var cotaId 		= cotaArray[0];
-			
-				if (cotaId == thisCotaId) {
-				
-					var cotaImg 	= cotaArray[2];
-					var cotaTitulo 	= cotaArray[3];
-					var cotaValor 	= cotaArray[4];    
-				
-					if (cotaId.substring(0, 2) == "FR") {
-						$("#cota-desc-city").html("Em Paris");  
-						$("#item_descr_1").val("PARIS - "+cotaTitulo);
-						
-					} else {
-						$("#cota-desc-city").html("Em Nova York");
-						$("#item_descr_1").val("NOVA YORK - "+cotaTitulo);
-					}
-					$("#cota-desc-title").html(cotaTitulo);
-					$("#cota-desc-price-value").html("R$ "+cotaValor+",00");
-					
-					$("#item_valor_1").val(cotaValor+"00");
-				}		   
-			}
-		
-			return false;
-		});
-
-		$(".cota-link").colorbox({width:"50%", inline:true, href:"#inline_paypal"});			
-
-		$("#yaren").colorbox({width:"50%", inline:true, href:"#inline_yaren"});			
-		   
-		$("#closeYarenButton").click(function() {
-		
-			$("#yaren").colorbox.close();
-			return false;
-			
-		});
-		
-</script>
+	</body>
+</html>

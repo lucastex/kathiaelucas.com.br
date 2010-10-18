@@ -1,117 +1,169 @@
-<h2>Mapa e localização</h2>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" > 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+	<head>	
+		<title>Kathia e Lucas</title>	
+		<meta http-equiv="Content-Type" content="text/xhtml+xml; charset=UTF-8" /> 
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.colorbox-min.js"></script>
+		<script src="js/jquery.cycle.all.latest.js"></script>
+		<script src="js/jquery.lwtCountdown-1.0.js"></script>
+		<link rel="stylesheet" href="css/colorbox.css" />
+		<link rel="stylesheet" href="css/stylesheet.css" />
+		<style type="text/css">
+			.slideshow { margin-left: 60px; margin-top: 5px;}
+			.slideshow img { padding: 15px; border: 2px solid #ccc; background-color: #5e6e2f; }
+		</style>
+		<script type="text/javascript">
 
-<p>
-	Para quem não é de Londrina, abaixo indicações de hotéis e salões de beleza.
-	<br />
-</p>
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-16760173-1']);
+		  _gaq.push(['_trackPageview']);
 
-<table width="100%">
-	<tr>
-		<td width="50%" valign="top">
-			
-			<div class="local-header"><img class="local-icon" src="http://maps.gstatic.com/intl/pt-BR_br/mapfiles/ms/micons/rangerstation.png"></img><span class="local-body-text">Igreja</span></div>
-			<p class="local-body">
-				<span class="local-nome">Paróquia Sagrados Corações</span> <br />
-				Rua Mato Grosso, 1167				
-			</p>
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
 
-			<div class="local-header"><img class="local-icon" src="http://maps.gstatic.com/intl/pt-BR_br/mapfiles/ms/micons/arts.png"></img><span class="local-body-text">Festa!</span></div>
-			<p class="local-body">
-				<span class="local-nome">Espaço Ruggei</span> <br />
-				Av Dr Francisco Xavier Toda, 170<br />
-				Parque Industrial Cacique				
-			</p>
-			
-			<div class="local-header"><img class="local-icon" src="http://maps.gstatic.com/intl/pt-BR_br/mapfiles/ms/micons/lodging.png"></img><span class="local-body-text">Hotéis</span></div>
-			<p class="local-body">
-				<span class="local-nome">Hotel Bristol (hotel dos noivos)</span> <br />
-				Avenida São Paulo, 779<br />
-				Londrina - PR, 86010-060<br />
-				(0xx) 43 3321-6161 - <a href="http://www.bristolhoteis.com.br/br/hotel/apresentacao.aspx?NumHotel=24" class="local-link">Visitar o site</a>
-			</p>
-			<p class="local-body">
-				<span class="local-nome">Golden Blue Hotel</span> <br />
-				Rua Borba Gato, 1190<br />
-				Londrina - PR, 86010-630<br />
-				(0xx)43 3371-8000 - <a href="http://www.goldenblue.com.br/" class="local-link">Visitar o site</a>
-			</p>
-			<p class="local-body">
-				<span class="local-nome">Comfort Suites Londrina</span> <br />
-				Rua Edwy Taques Araujo, 250<br />
-				Londrina - PR, 86047-500<br />
-				(0xx)43 2103-9100 - <a href="http://www.comfortsuites.com/hotel-londrina-brazil-BR063" class="local-link">Visitar o site</a>
-			</p>
-			<p class="local-body">
-				<span class="local-nome">Crillon Palace Hotel</span> <br />
-				Avenida São Paulo, 658<br />
-				Londrina - PR, 86010-060<br />
-				(0xx)43 3378-5000 - <a href="http://www.crillon.com.br" class="local-link">Visitar o site</a>
-			</p>
-			<p class="local-body">
-				<span class="local-nome">Cedro Hotel</span> <br />
-				Avenida Juscelino Kubitschek, 200<br />
-				Londrina - PR, 86020-000<br />
-				(0xx)43 3027-7079 - <a href="http://www.cedrohotel.com.br" class="local-link">Visitar o site</a>
-			</p>
-			<p class="local-body">
-				<span class="local-nome">Hotel Blue Tree</span> <br />
-				Avenida Juscelino Kubitschek, 1356<br />
-				Londrina - PR, 86020-000<br />
-				(0xx)43 3344-1565 - <a href="http://www.bluetree.com.br" class="local-link">Visitar o site</a>
-			</p>									
-			
-			<div class="local-header"><img class="local-icon" src="http://maps.gstatic.com/intl/pt-BR_br/mapfiles/ms/micons/woman.png"></img><span class="local-body-text">Salões de beleza</span></div>
-			<p class="local-body">
-				<span class="local-nome">Carlinhos Vasconcelos</span> <br />
-				Rua Prof. João Candido, 1300 <br />
-				Entrada pela Rua Raposo Tavares <br />
-				Fone: (43) 3326-0482 - <a href="http://www.carlinhosvasconcelos.com.br" class="local-link">Visitar o site</a> <br />
-			</p>
-			<p class="local-body">
-				<span class="local-nome">Studio V Coiffeur</span> <br />
-				Rua: Paranaguá, 946  <br />
-				Fone: (43) - 3324-9594 - <a href="http://www.studiovcoiffeur.com.br" class="local-link">Visitar o site</a> <br />
-			</p>
-			<p class="local-body">
-				<span class="local-nome">Fábio Farias</span> <br />
-				Rua Paranaguá, 850 <br />
-				Fone: (43) 3323-0327 - <a href="http://www.fabiofarias.com" class="local-link">Visitar o site</a> <br />
-			</p>
-			<p class="local-body">
-				<span class="local-nome">Jacques Janine</span> <br />
-				Rua Santos, 392 <br />
-				Fone: (43) 3329-0422 - <a href="http://www.jacquesjanine.com.br" class="local-link">Visitar o site</a> <br />
-			</p>
-			<p class="local-body">
-				<span class="local-nome">Vanio Bitencourt</span> <br />
-				Rua Belo Horizonte, 906 <br />
-				Fone: (43) 3322-5312 <br />
-			</p>
-			<p class="local-body">
-				<span class="local-nome">Catuaí Cabeleireiros</span> <br />
-				Rodovia Celso Garcia Cid, s/nº, km 377 <br />
-				OBS: Salão no Shopping Catuaí <br />
-				Fone: (43) 3339-1769 - <a href="http://www.catuaishopping.com.br" class="local-link">Visitar o site</a> <br />
-			</p>
-			<p class="local-body">
-				<span class="local-nome">Personality Cabelos &amp; Noivas</span> <br />
-				R. Alagoas, 1131<br />
-				Fone: (43) 3322-0102<br />
-			</p>
-		</td>
-		<td width="50%" align="center" valign="top">
-			<iframe class="map-div" width="250" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.br/maps/ms?hl=pt-BR&amp;gl=br&amp;ptab=2&amp;ie=UTF8&amp;oe=UTF8&amp;msa=0&amp;msid=101284375144678385535.00048de5f73edc85b8c4e&amp;ll=-23.308838,-51.166077&amp;spn=0.047295,0.051498&amp;z=13&amp;output=embed"></iframe>
-			<a class="button-map mapa-ampliado" href="http://maps.google.com.br/maps/ms?hl=pt-BR&amp;gl=br&amp;ptab=2&amp;ie=UTF8&amp;oe=UTF8&amp;msa=0&amp;msid=101284375144678385535.00048de5f73edc85b8c4e&amp;ll=-23.315468,-51.183194&amp;spn=0.05851,0.053697&amp;output=embed">ampliar mapa</a>
-			<a class="button-map vernogmaps" target="_blank" href="http://maps.google.com.br/maps/ms?hl=pt-BR&amp;gl=br&amp;ptab=2&amp;ie=UTF8&amp;oe=UTF8&amp;msa=0&amp;msid=101284375144678385535.00048de5f73edc85b8c4e&amp;ll=-23.315468,-51.183194&amp;spn=0.05851,0.053697&amp;source=embed">ver no google maps</a>                             
-			
-		</td>
-	</tr>
-</table>        
+		</script>
+	</head>	
+	<body>	
+		<div id="page">			
+			<div id="content">			
+				<h1><span>Kathia e Lucas</span></h1>				
+				<div id="mainContent">				
+					<div id="photos"><img src="img/fotos.png" alt="Fotos" /></div>					
+					<div id="container">					
+						<ul id="menu">
+							<li><a href="index.html" class="inicio">O nosso casamento</a></li>
+							<li><a href="momentos.html" class="momentos">Fotos e Momentos</a></li>
+							<li><a href="mapa.html" class="mapa">Mapa e Localização</a></li>
+							<li><a href="presentes.html" class="lista">Lista de Presentes</a></li>
+						</ul>						
+						<div id="middle" class="scroll">  
+							
+							<h2>Mapa e localização</h2>
 
-<script>
-	$(document).ready(function() {
-		
-		$(".mapa-ampliado").colorbox({width:"90%", height:"90%", iframe:true});
-				
-	});
-</script>
+							<p>
+								Para quem não é de Londrina, abaixo indicações de hotéis e salões de beleza.
+								<br />
+							</p>
+
+							<table width="100%">
+								<tr>
+									<td width="50%" valign="top">
+
+										<div class="local-header"><img class="local-icon" src="http://maps.gstatic.com/intl/pt-BR_br/mapfiles/ms/micons/rangerstation.png"></img><span class="local-body-text">Igreja</span></div>
+										<p class="local-body">
+											<span class="local-nome">Paróquia Sagrados Corações</span> <br />
+											Rua Mato Grosso, 1167				
+										</p>
+
+										<div class="local-header"><img class="local-icon" src="http://maps.gstatic.com/intl/pt-BR_br/mapfiles/ms/micons/arts.png"></img><span class="local-body-text">Festa!</span></div>
+										<p class="local-body">
+											<span class="local-nome">Espaço Ruggei</span> <br />
+											Av Dr Francisco Xavier Toda, 170<br />
+											Parque Industrial Cacique				
+										</p>
+
+										<div class="local-header"><img class="local-icon" src="http://maps.gstatic.com/intl/pt-BR_br/mapfiles/ms/micons/lodging.png"></img><span class="local-body-text">Hotéis</span></div>
+										<p class="local-body">
+											<span class="local-nome">Hotel Bristol (hotel dos noivos)</span> <br />
+											Avenida São Paulo, 779<br />
+											Londrina - PR, 86010-060<br />
+											(0xx) 43 3321-6161 - <a href="http://www.bristolhoteis.com.br/br/hotel/apresentacao.aspx?NumHotel=24" class="local-link">Visitar o site</a>
+										</p>
+										<p class="local-body">
+											<span class="local-nome">Golden Blue Hotel</span> <br />
+											Rua Borba Gato, 1190<br />
+											Londrina - PR, 86010-630<br />
+											(0xx)43 3371-8000 - <a href="http://www.goldenblue.com.br/" class="local-link">Visitar o site</a>
+										</p>
+										<p class="local-body">
+											<span class="local-nome">Comfort Suites Londrina</span> <br />
+											Rua Edwy Taques Araujo, 250<br />
+											Londrina - PR, 86047-500<br />
+											(0xx)43 2103-9100 - <a href="http://www.comfortsuites.com/hotel-londrina-brazil-BR063" class="local-link">Visitar o site</a>
+										</p>
+										<p class="local-body">
+											<span class="local-nome">Crillon Palace Hotel</span> <br />
+											Avenida São Paulo, 658<br />
+											Londrina - PR, 86010-060<br />
+											(0xx)43 3378-5000 - <a href="http://www.crillon.com.br" class="local-link">Visitar o site</a>
+										</p>
+										<p class="local-body">
+											<span class="local-nome">Cedro Hotel</span> <br />
+											Avenida Juscelino Kubitschek, 200<br />
+											Londrina - PR, 86020-000<br />
+											(0xx)43 3027-7079 - <a href="http://www.cedrohotel.com.br" class="local-link">Visitar o site</a>
+										</p>
+										<p class="local-body">
+											<span class="local-nome">Hotel Blue Tree</span> <br />
+											Avenida Juscelino Kubitschek, 1356<br />
+											Londrina - PR, 86020-000<br />
+											(0xx)43 3344-1565 - <a href="http://www.bluetree.com.br" class="local-link">Visitar o site</a>
+										</p>									
+
+										<div class="local-header"><img class="local-icon" src="http://maps.gstatic.com/intl/pt-BR_br/mapfiles/ms/micons/woman.png"></img><span class="local-body-text">Salões de beleza</span></div>
+										<p class="local-body">
+											<span class="local-nome">Carlinhos Vasconcelos</span> <br />
+											Rua Prof. João Candido, 1300 <br />
+											Entrada pela Rua Raposo Tavares <br />
+											Fone: (43) 3326-0482 - <a href="http://www.carlinhosvasconcelos.com.br" class="local-link">Visitar o site</a> <br />
+										</p>
+										<p class="local-body">
+											<span class="local-nome">Studio V Coiffeur</span> <br />
+											Rua: Paranaguá, 946  <br />
+											Fone: (43) - 3324-9594 - <a href="http://www.studiovcoiffeur.com.br" class="local-link">Visitar o site</a> <br />
+										</p>
+										<p class="local-body">
+											<span class="local-nome">Fábio Farias</span> <br />
+											Rua Paranaguá, 850 <br />
+											Fone: (43) 3323-0327 - <a href="http://www.fabiofarias.com" class="local-link">Visitar o site</a> <br />
+										</p>
+										<p class="local-body">
+											<span class="local-nome">Jacques Janine</span> <br />
+											Rua Santos, 392 <br />
+											Fone: (43) 3329-0422 - <a href="http://www.jacquesjanine.com.br" class="local-link">Visitar o site</a> <br />
+										</p>
+										<p class="local-body">
+											<span class="local-nome">Vanio Bitencourt</span> <br />
+											Rua Belo Horizonte, 906 <br />
+											Fone: (43) 3322-5312 <br />
+										</p>
+										<p class="local-body">
+											<span class="local-nome">Catuaí Cabeleireiros</span> <br />
+											Rodovia Celso Garcia Cid, s/nº, km 377 <br />
+											OBS: Salão no Shopping Catuaí <br />
+											Fone: (43) 3339-1769 - <a href="http://www.catuaishopping.com.br" class="local-link">Visitar o site</a> <br />
+										</p>
+										<p class="local-body">
+											<span class="local-nome">Personality Cabelos &amp; Noivas</span> <br />
+											R. Alagoas, 1131<br />
+											Fone: (43) 3322-0102<br />
+										</p>
+									</td>
+									<td width="50%" align="center" valign="top">
+										<iframe class="map-div" width="250" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.br/maps/ms?hl=pt-BR&amp;gl=br&amp;ptab=2&amp;ie=UTF8&amp;oe=UTF8&amp;msa=0&amp;msid=101284375144678385535.00048de5f73edc85b8c4e&amp;ll=-23.308838,-51.166077&amp;spn=0.047295,0.051498&amp;z=13&amp;output=embed"></iframe>
+										<a class="button-map mapa-ampliado" href="http://maps.google.com.br/maps/ms?hl=pt-BR&amp;gl=br&amp;ptab=2&amp;ie=UTF8&amp;oe=UTF8&amp;msa=0&amp;msid=101284375144678385535.00048de5f73edc85b8c4e&amp;ll=-23.315468,-51.183194&amp;spn=0.05851,0.053697&amp;output=embed">ampliar mapa</a>
+										<a class="button-map vernogmaps" target="_blank" href="http://maps.google.com.br/maps/ms?hl=pt-BR&amp;gl=br&amp;ptab=2&amp;ie=UTF8&amp;oe=UTF8&amp;msa=0&amp;msid=101284375144678385535.00048de5f73edc85b8c4e&amp;ll=-23.315468,-51.183194&amp;spn=0.05851,0.053697&amp;source=embed">ver no google maps</a>                             
+
+									</td>
+								</tr>
+							</table>        
+
+							<script>
+								$(document).ready(function() {
+
+									$(".mapa-ampliado").colorbox({width:"90%", height:"90%", iframe:true});
+
+								});
+							</script>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

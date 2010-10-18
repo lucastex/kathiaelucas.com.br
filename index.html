@@ -35,53 +35,79 @@
 					<div id="photos"><img src="img/fotos.png" alt="Fotos" /></div>					
 					<div id="container">					
 						<ul id="menu">
-							<li><a href="#" class="inicio">O nosso casamento</a></li>
-							<li><a href="#" class="momentos">Fotos e Momentos</a></li>
-							<li><a href="#" class="mapa">Mapa e Localização</a></li>
-							<li><a href="#" class="lista">Lista de Presentes</a></li>
+							<li><a href="index.html" class="inicio">O nosso casamento</a></li>
+							<li><a href="momentos.html" class="momentos">Fotos e Momentos</a></li>
+							<li><a href="mapa.html" class="mapa">Mapa e Localização</a></li>
+							<li><a href="presentes.html" class="lista">Lista de Presentes</a></li>
 						</ul>						
 						<div id="middle" class="scroll">  
+							
+							<h2>O nosso casamento</h2>
+
+							<p class="big">
+								Chegou a hora, não dá mais pra enrolar!
+							</p>
+							<p class="big">
+								Depois de 4 anos e meio, está na hora do nosso casamento! Será no dia 13 de novembro, e queremos reunir nossos amigos mais próximos e familiares para comemorar esta união.	
+							</p> 
+							<p class="big">
+								Colocamos neste site, informações para quem não mora em Londrina, como hotéis e salões de beleza. Deixamos a dica para que o hotel seja reservado com antecedência, pois no mesmo fim de semana ocorrerá o vestibular da UEL. 
+							</p>
+							<p class="big">
+								Nos vemos lá.
+							</p>
+							<p class="big" style="text-align: right">
+								Kathia e Lucas
+							</p>
+
+							<div id="countdown_title">Faltam</div>
+							<div id="countdown_dashboard">
+								<div class="dash weeks_dash">
+									<span class="dash_title">semanas</span>
+									<div class="digit">0</div>
+									<div class="digit">0</div>
+								</div>
+
+								<div class="dash days_dash">
+									<span class="dash_title">dias</span>
+									<div class="digit">0</div>
+									<div class="digit">0</div>
+								</div>
+
+								<div class="dash hours_dash">
+
+									<span class="dash_title">horas</span>
+									<div class="digit">0</div>
+									<div class="digit">0</div>
+								</div>
+
+								<div class="dash minutes_dash">
+									<span class="dash_title">minutos</span>
+
+									<div class="digit">0</div>
+									<div class="digit">0</div>
+								</div>
+
+							</div>
+							<script language="javascript" type="text/javascript">
+								jQuery(document).ready(function() {
+									$('#countdown_dashboard').countDown({
+										targetDate: {
+											'day': 		13,
+											'month': 	11,
+											'year': 	2010,
+											'hour': 	21,
+											'min': 		0,
+											'sec': 		0
+										}
+									});
+								});
+							</script>
 							
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<script>
-		
-			$("#middle").load("inicio.html");
-			
-			$(document).ready(function() {
-				
-				$(".inicio").click(function() {
-					$("#middle").load("inicio.html", function() {
-						_gaq.push(['_trackEvent', 'Kathia-e-Lucas', 'Menu', 'inicio.html']);
-					});
-					return false;
-				});
-				
-				$(".momentos").click(function() {
-					$("#middle").load("momentos.html", function() {
-						_gaq.push(['_trackEvent', 'Kathia-e-Lucas', 'Menu', 'momentos.html']);
-					});
-					return false;
-				});
-				
-				$(".mapa").click(function() {
-					$("#middle").load("mapa.html", function() {
-						_gaq.push(['_trackEvent', 'Kathia-e-Lucas', 'Menu', 'mapa.html']);
-					});
-					return false;
-				});
-				
-				$(".lista").click(function() {
-					$("#middle").load("menu-lista.html", function() {
-						_gaq.push(['_trackEvent', 'Kathia-e-Lucas', 'Menu', 'lista.html']);
-					});
-					return false;
-				});
-			});
-		
-		</script>
 	</body>
 </html>
